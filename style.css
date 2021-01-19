@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF2F4;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #2B2D42;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header .wrapper {
+    background-color: #2B2D42;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header #logo {
+    max-width: 70px;
+}
+
+header h1 {
+    font-size: 1.4em;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons ul {
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons img {
+    max-width: 25px;
+}
+
+menu {
+    background-color: #8D99AE;
+}
+
+menu .wrapper {
+    align-items: center;
+    justify-content: space-around;
+}
+
+menu .wrapper ul li {
+    padding: 25px;
+    display: inline-block;
+}
+
+menu .wrapper ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+section .index {
+    background-color: #8D99AE;
+    padding-top: 15px;
+    text-align: center;
+    max-height: auto;
+}
+
+section .index a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+section .index a:hover {
+    background-color: #CCDAE0;
+    transition: 0.3s ease-in-out;
+}
+
+section .index a img {
+    margin-top: 10px;
+    border-radius: 1000px;
+}
+
+section img {
+    max-width: 170px;
+}
+
+#contentSection .banner {
+    text-align: center;
+    padding: 25px;
+}
+
+#contentSection .opcije {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contentSection .opcije label {
+    margin: 5px;
+    max-width: 250px;
+    min-width: 250px;
+    text-align: center;
+    padding: 22px;
+    cursor: pointer;
+    background-color: #556177;
+}
+
+.area .areaContent,
+.area input {
+    display: none;
+}
+
+.areaContent {
+    background-color: #66758F;
+}
+
+.area input:checked+.areaContent {
+    display: block;
+}
+
+.proizvod {
+    background-color: #DAE4E7;
+}
+
+.proizvod h3 {
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: red;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+.proizvod a {
+    text-decoration: none;
+}
+
+#naocare-za-vid h2,
+#naocare-za-sunce h2,
+#naocare-za-racunar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#naocare-za-vid p,
+#naocare-za-sunce p,
+#naocare-za-racunar p {
+    padding: 15px;
+}
+
+#naocare-za-vid .proizvod-holder,
+#naocare-za-sunce .proizvod-holder,
+#naocare-za-racunar .proizvod-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#naocare-za-vid .proizvod-holder .proizvod-row,
+#naocare-za-sunce .proizvod-holder .proizvod-row,
+#naocare-za-racunar .proizvod-holder .proizvod-row {
+    display: flex;
+}
+
+#naocare-za-vid .proizvod-holder .proizvod-row .proizvod,
+#naocare-za-sunce .proizvod-holder .proizvod-row .proizvod,
+#naocare-za-racunar .proizvod-holder .proizvod-row .proizvod {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    margin: 25px;
+}
+
+#naocare-za-vid .txt-img,
+#naocare-za-sunce .txt-img,
+#naocare-za-racunar .txt-img {
+    color: #2B2D42;
+    background-color: #DAE4E7;
+    display: flex;
+    align-items: center;
+}
+
+#naocare-za-vid .txt-img span,
+#naocare-za-sunce .txt-img span,
+#naocare-za-racunar .txt-img span {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#naocare-za-vid .txt-img img,
+#naocare-za-sunce .txt-img img,
+#naocare-za-racunar .txt-img img {
+    max-width: 700px;
+    padding: 15px;
+}
+
+.content-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    max-width: 300px;
+    margin: 65.9px;
+}
+
+.image {
+    border-radius: 20px;
+    display: block;
+    max-width: 300px;
+    height: 400px;
+    filter: brightness(70%);
+}
+
+.overlay {
+    border-radius: 0 0 20px 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.70);
+    overflow: hidden;
+    height: 40px;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 50%;
+}
+
+.text {
+    margin: 0 auto;
+    max-width: 300px;
+    color: black;
+    font-size: 1em;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h3 {
+    font-size: 1.1em;
+    margin-bottom: 30%;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #CCDAE0;
+}
+
+footer .wrapper {
+    color: #556177;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .start {
+    line-height: 50px;
+}
+
+footer .midle {
+    padding: 15px;
+    background-color: #556177;
+}
+
+footer .midle ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+footer .midle ul li a {
+    text-decoration: none;
+    color: #EDF2F4;
+}
+
+footer .end img {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 580px) {
+    .index {
+        margin-top: 15px;
+    }
+    section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #contentSection .opcije {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #naocare-za-vid .proizvod-holder .proizvod-row,
+    #naocare-za-sunce .proizvod-holder .proizvod-row,
+    #naocare-za-racunar .proizvod-holder .proizvod-row {
+        flex-direction: column;
+        margin: 0;
+    }
+    #naocare-za-vid .txt-img,
+    #naocare-za-sunce .txt-img,
+    #naocare-za-racunar .txt-img {
+        flex-direction: column;
+    }
+    #naocare-za-vid .txt-img img,
+    #naocare-za-sunce .txt-img img,
+    #naocare-za-racunar .txt-img img {
+        max-width: 350px;
+        padding: 15px;
+    }
+    footer .wrapper {
+        flex-direction: column-reverse;
+    }
+    footer .end img {
+        max-width: 100px;
+    }
+    footer .midle {
+        width: 100%;
+    }
+    .content-page {
+        flex-direction: column;
+    }
+    .container {
+        margin: 10px;
+    }
+}
